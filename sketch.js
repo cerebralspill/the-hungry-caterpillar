@@ -25,40 +25,24 @@ function keyPressed() {
 	switch (keyCode){
 		case LEFT_ARROW:
 			console.log('pressed', keyCode)
-			// if (caterpillar.getDirStr() === 'right'){
-			// 	break;
-			// }
-			// else{
 			caterpillar.setDir(-1, 0);
 			break;
-			// }
-
+			
 		case RIGHT_ARROW:
 			console.log('pressed', keyCode)
-			// if (caterpillar.getDirStr() === 'left'){
-			// 	break;
-			// } else {
 			caterpillar.setDir(1, 0);
 			break;
-			// }
-
+			
 		case DOWN_ARROW:
 			console.log('pressed', keyCode)
-
-			// if (caterpillar.getDirStr() === 'up'){
-			// 	break;
-			// } else {
 			caterpillar.setDir(0, 1)
 			break;
-			// }
+			
 		case UP_ARROW:
 			console.log('pressed', keyCode)
-			// if (caterpillar.getDirStr() === 'down'){
-			// 	break;
-			// } else {
 			caterpillar.setDir(0, -1)
 			break;
-			// }
+			
 		default:
 			console.log('pressed', keyCode)
 			break;
