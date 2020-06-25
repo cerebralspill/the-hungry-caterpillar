@@ -7,9 +7,15 @@ function setup() {
   h = floor(480/resolution);
   createCanvas(w*resolution, h*resolution);
   frameRate(10);
-  caterpillar = new Caterpillar();
-  apple = get_new_apple();
-  score = 0;
+  resetGame();
+  var button = createButton("reset");
+  button.mousePressed(resetGame);
+}
+
+function resetGame() {
+	caterpillar = new Caterpillar();
+	apple = get_new_apple();
+	score = 0;
 }
 
 function get_new_apple(){
